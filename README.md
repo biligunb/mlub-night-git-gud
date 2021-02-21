@@ -5,23 +5,23 @@ This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/
 
 ## Commands that are run
  - Install loopback CLI
-   - `npm i -g @loopback/cli`
+   - `npm i -g @loopback/cli`  
    ![1-loopback-cli-install](./public/images/1-loopback-cli-install.png)
  - Generate loopback application
-   - `lb4 app`
-   ![2-lb4-app](./public/images/2-lb4-app.png)
+   - `lb4 app`  
+   ![2-lb4-app](./public/images/2-lb4-app.png)  
    ![2-lb4-app-2](./public/images/2-lb4-app-2.png)
  - Create datasource (InMemoryDb)
-   - `lb4 datasource`
+   - `lb4 datasource`  
    ![3-lb4-datasource](./public/images/3-lb4-datasource.png)
  - Create model (Todo : id, title, description)
-   - `lb4 model`
+   - `lb4 model`  
    ![4-lb4-model](./public/images/4-lb4-model.png)
  - Create repository (InMemoryDb & Default CRUD)
-   - `lb4 repository`
+   - `lb4 repository`  
    ![5-lb4-repository](./public/images/5-lb4-repository.png)
  - Create controller (REST)
-   - `lb4 controller`
+   - `lb4 controller`  
    ![6-lb4-controller](./public/images/6-lb4-controller.png)
 
 ## Install dependencies
