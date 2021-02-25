@@ -1,5 +1,6 @@
 stages:
   - test
+  - deploy
 
 Run unit test for MR:
   tags:
@@ -15,3 +16,30 @@ Run unit test for MR:
   script:
     - npm run test
     - echo 'Thank you for choosing GitLab CI/CD'
+
+Run unit test for `stage`:
+  tags:
+    - mlub-night
+  stage: test
+  only:
+    - master
+  before_script:
+    - source ~/.nvm/nvm.sh
+    - node --version
+    - pwd && ls -lsa
+  script:
+    - npm run test
+    - echo 'Thank you for choosing GitLab CI/CD'
+
+Deploy to AWS EC2:
+  tags:
+    - newfish-core
+  stage: deploy
+  when: manual
+  only:
+    - master
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  script:
+    - echo "Deploying to server"
+    - bash deploy-scripts/deploy.sh
