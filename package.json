@@ -61,8 +61,6 @@
     "@loopback/testlab": "^3.2.12",
     "@types/node": "^10.17.51",
     "eslint": "^7.18.0",
-    "husky": "^5.1.1",
-    "lint-staged": "^10.5.4",
     "source-map-support": "^0.5.19",
     "typescript": "~4.1.3"
   }
