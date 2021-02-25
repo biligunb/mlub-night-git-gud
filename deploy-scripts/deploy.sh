@@ -21,7 +21,8 @@ pm2 delete all
 
 # echo "Running npm install front-end"
 npm install
-cp ~/socket.env .env && cat .env
+npm run clean
+npm run build
 pm2 start ecosystem.config.js
 
 echo "Check pm2 status"
