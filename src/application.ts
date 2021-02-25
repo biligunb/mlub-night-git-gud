@@ -32,7 +32,7 @@ export class MlubNightApplication extends BootMixin(ServiceMixin(RepositoryMixin
         // Customize ControllerBooter Conventions here
         dirs: ['controllers'],
         extensions: ['.controller.js'],
-        nested: true   
+        nested: true,
       },
     };
   }
