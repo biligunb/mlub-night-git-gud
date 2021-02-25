@@ -1,0 +1,17 @@
+stages:
+  - test
+
+Run unit test for MR:
+  tags:
+    - mlub-night
+  stage: test
+  only:
+    - merge_requests
+  before_script:
+    - source ~/.nvm/nvm.sh
+    - node --version
+    - pwd && ls -lsa
+    - npm install
+  script:
+    - npm run test
+    - echo 'Thank you for choosing GitLab CI/CD'
