@@ -1,14 +1,15 @@
 {
-  "editor.rulers": [80],
+  "editor.rulers": [
+    80
+  ],
   "editor.tabCompletion": "on",
   "editor.tabSize": 2,
-  "editor.trimAutoWhitespace": true,
-  "editor.formatOnSave": true,
+  "editor.trimAutoWhitespace": false,
+  "editor.formatOnSave": false,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true,
-    "source.fixAll.eslint": true
+    "source.organizeImports": false,
+    "source.fixAll.eslint": false
   },
-
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
@@ -18,8 +19,7 @@
     "dist": true,
   },
   "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-
+  "files.trimTrailingWhitespace": false,
   "typescript.tsdk": "./node_modules/typescript/lib",
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
   "typescript.preferences.quoteStyle": "single",
