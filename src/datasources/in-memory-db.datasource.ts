@@ -13,9 +13,7 @@ const config = {
 // gracefully. The `stop()` method is inherited from `juggler.DataSource`.
 // Learn more at https://loopback.io/doc/en/lb4/Life-cycle.html
 @lifeCycleObserver('datasource')
-export class InMemoryDbDataSource
-  extends juggler.DataSource
-  implements LifeCycleObserver {
+export class InMemoryDbDataSource extends juggler.DataSource implements LifeCycleObserver {
   static dataSourceName = 'InMemoryDb';
   static readonly defaultConfig = config;
 

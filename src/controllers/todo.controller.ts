@@ -1,22 +1,5 @@
-import {
-  Count,
-  CountSchema,
-  Filter,
-  FilterExcludingWhere,
-  repository,
-  Where,
-} from '@loopback/repository';
-import {
-  post,
-  param,
-  get,
-  getModelSchemaRef,
-  patch,
-  put,
-  del,
-  requestBody,
-  response,
-} from '@loopback/rest';
+import {Count, CountSchema, Filter, FilterExcludingWhere, repository, Where} from '@loopback/repository';
+import {post, param, get, getModelSchemaRef, patch, put, del, requestBody, response} from '@loopback/rest';
 import {Todo} from '../models';
 import {TodoRepository} from '../repositories';
 
@@ -100,10 +83,7 @@ export class TodoController {
       },
     },
   })
-  async findById(
-    @param.path.number('id') id: number,
-    @param.filter(Todo, {exclude: 'where'}) filter?: FilterExcludingWhere<Todo>,
-  ): Promise<Todo> {
+  async findById(@param.path.number('id') id: number, @param.filter(Todo, {exclude: 'where'}) filter?: FilterExcludingWhere<Todo>): Promise<Todo> {
     return this.todoRepository.findById(id, filter);
   }
 
@@ -129,10 +109,7 @@ export class TodoController {
   @response(204, {
     description: 'Todo PUT success',
   })
-  async replaceById(
-    @param.path.number('id') id: number,
-    @requestBody() todo: Todo,
-  ): Promise<void> {
+  async replaceById(@param.path.number('id') id: number, @requestBody() todo: Todo): Promise<void> {
     await this.todoRepository.replaceById(id, todo);
   }
 
