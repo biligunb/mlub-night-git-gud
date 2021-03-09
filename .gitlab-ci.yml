@@ -1,0 +1,46 @@
+stages:
+  - test
+  - deploy
+
+Run unit test for MR:
+  tags:
+    - ci-cd-demo
+  stage: test
+  only:
+    - merge_requests
+  before_script:
+    - source /home/ubuntu/.nvm/nvm.sh
+    - node --version
+    - pwd && ls -lsa
+    - npm install
+  script:
+    - npm run test
+    - echo 'Thank you for choosing GitLab CI/CD'
+
+Run unit test for `master`:
+  tags:
+    - ci-cd-demo
+  stage: test
+  only:
+    - master
+  before_script:
+    - source /home/ubuntu/.nvm/nvm.sh
+    - node --version
+    - pwd && ls -lsa
+    - npm install
+  script:
+    - npm run test
+    - echo 'Thank you for choosing GitLab CI/CD'
+
+Deploy to AWS EC2:
+  tags:
+    - ci-cd-demo
+  stage: deploy
+  when: manual
+  only:
+    - master
+  before_script:
+    - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+  script:
+    - echo "Deploying to server"
+    - bash deploy-scripts/deploy.sh
