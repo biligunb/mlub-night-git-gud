@@ -357,8 +357,8 @@
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/readline.d.ts": {
-        "version": "81ef2751228318b1c7c6b35ccae2ea39ef275add30319e746bfd4658208a0519",
-        "signature": "81ef2751228318b1c7c6b35ccae2ea39ef275add30319e746bfd4658208a0519",
+        "version": "b2fe368abdc803b82d27bd27f168d106804422ade198c3c085e2519b195ebd26",
+        "signature": "b2fe368abdc803b82d27bd27f168d106804422ade198c3c085e2519b195ebd26",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/repl.d.ts": {
@@ -1332,8 +1332,8 @@
         "affectsGlobalScope": false
       },
       "./node_modules/@types/qs/index.d.ts": {
-        "version": "c236451df6139a965bb9b8fba15a43a8bebf4400ca589998e2bdc5e1291fa0f9",
-        "signature": "c236451df6139a965bb9b8fba15a43a8bebf4400ca589998e2bdc5e1291fa0f9",
+        "version": "98437d5a640b67c41534f0de2dcb64c75433dcdff54ff8f8432e613663619a2e",
+        "signature": "98437d5a640b67c41534f0de2dcb64c75433dcdff54ff8f8432e613663619a2e",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/express-serve-static-core/index.d.ts": {
@@ -1797,8 +1797,8 @@
         "affectsGlobalScope": false
       },
       "./node_modules/@types/sinon/index.d.ts": {
-        "version": "7b7ad75478fee75f866dd56a74847cd1654338fbb8d09dacea69b38b9b93f36f",
-        "signature": "7b7ad75478fee75f866dd56a74847cd1654338fbb8d09dacea69b38b9b93f36f",
+        "version": "9d92b037978bb9525bc4b673ebddd443277542e010c0aef019c03a170ccdaa73",
+        "signature": "9d92b037978bb9525bc4b673ebddd443277542e010c0aef019c03a170ccdaa73",
         "affectsGlobalScope": false
       },
       "./node_modules/@loopback/testlab/dist/sinon.d.ts": {
@@ -1892,8 +1892,8 @@
         "affectsGlobalScope": false
       },
       "./node_modules/@types/fs-extra/index.d.ts": {
-        "version": "62b1766a5d23c43bb47b7f5c60410eff7af63ed9b9a09c67d55926ef69f6979b",
-        "signature": "62b1766a5d23c43bb47b7f5c60410eff7af63ed9b9a09c67d55926ef69f6979b",
+        "version": "9580f90a9e7a9ce62aaed6b3014d4436a2c2d78b618aeb5052366b90cdb4f4d5",
+        "signature": "9580f90a9e7a9ce62aaed6b3014d4436a2c2d78b618aeb5052366b90cdb4f4d5",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/minimatch/index.d.ts": {

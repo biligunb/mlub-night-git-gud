@@ -1,7 +1,7 @@
 {
-  "name": "mlub-night",
+  "name": "ci-cd-demo",
   "version": "0.0.1",
-  "description": "mlub night",
+  "description": "ci-cd-demo",
   "keywords": [
     "loopback-application",
     "loopback"
